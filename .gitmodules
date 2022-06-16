@@ -1,0 +1,3 @@
+[submodule "kwrap-icons"]
+	path = kwrap-icons
+	url = https://github.com/kwrap/kwrap-icons.git

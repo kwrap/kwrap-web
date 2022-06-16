@@ -1,0 +1,14 @@
+{
+    "name": "Kwrap",
+    "short_name": "Kwrap",
+    "description": "Simple and secure password manager",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "./icon.png",
+            "sizes": "512x512"
+        }
+    ],
+    "start_url": "./",
+    "related_applications": []
+}

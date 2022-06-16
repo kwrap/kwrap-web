@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.input {
+    @apply h-full w-full bg-transparent outline-none text-font dark:text-gray-100;
+}
+
+.animate-bg-show {
+    animation: bg-show 0.16s linear;
+}
+@keyframes bg-show {
+    from {
+        background-color: rgba(0, 0, 0, 0);
+    }
+    to {
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+}
+
+.animate-alert {
+    animation: alert 0.16s ease;
+}
+@keyframes alert {
+    from {
+        transform: scale3d(0.9, 0.9, 1);
+        opacity: 0;
+    }
+    to {
+        transform: scale3d(1, 1, 1);
+        opacity: 1;
+    }
+}

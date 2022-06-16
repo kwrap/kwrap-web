@@ -1,0 +1,8 @@
+tabWidth: 4
+semi: false
+singleQuote: true
+quoteProps: consistent
+jsxSingleQuote: true
+trailingComma: none
+arrowParens: always
+printWidth: 100

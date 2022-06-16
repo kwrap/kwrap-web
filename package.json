@@ -1,0 +1,35 @@
+{
+    "name": "kwrap-web",
+    "version": "0.0.0",
+    "description": "Kwrap's Web client",
+    "author": "wyhaya <wyhaya@gmail.com>",
+    "homepage": "https://web.kwrap.app",
+    "repository": "https://github.com/kwrap/kwrap-web.git",
+    "license": "MIT",
+    "scripts": {
+        "dev": "vite",
+        "build": "tsc && vite build",
+        "fmt": "prettier --write \"**/*.{html,css,ts,tsx,json,js}\"",
+        "check:fmt": "prettier --check \"**/*.{html,css,ts,tsx,json,js}\""
+    },
+    "dependencies": {
+        "@microsoft/fetch-event-source": "^2.0.1",
+        "clsx": "^1.1.1",
+        "otpauth": "^7.1.3",
+        "react": "^18.1.0",
+        "react-dom": "^18.1.0",
+        "recoil": "0.7.3-alpha.2"
+    },
+    "devDependencies": {
+        "@types/node": "^17.0.36",
+        "@types/react": "^18.0.9",
+        "@types/react-dom": "^18.0.5",
+        "@vitejs/plugin-react": "^1.3.2",
+        "postcss": "^8.4.13",
+        "prettier": "^2.6.2",
+        "tailwindcss": "^3.1.2",
+        "typescript": "^4.7.2",
+        "vite": "^2.9.9",
+        "vite-plugin-html": "^3.2.0"
+    }
+}
