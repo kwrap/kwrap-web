@@ -1,4 +1,5 @@
 import * as fs from 'fs'
+import { resolve } from 'path'
 import { UserConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import { createHtmlPlugin } from 'vite-plugin-html'
@@ -19,7 +20,7 @@ copyDir('./kwrap-icons/icons/', './src/public/icons/')
 export default (): UserConfig => {
     return {
         server: {
-            host: '0.0.0.0',
+            host: true,
             port: 1234
         },
         base: './',
@@ -31,7 +32,7 @@ export default (): UserConfig => {
             target: 'esnext',
             rollupOptions: {
                 input: {
-                    index: './src/index.html'
+                    index: resolve(__dirname, './src/index.html')
                 }
             }
         },
